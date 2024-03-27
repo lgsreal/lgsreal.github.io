@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,34 @@
     body, html {
         margin: 0;
         padding: 0;
-        height: 100%;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
     .top-half {
+        background-color: white;
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 50%;
     }
     .bottom-half {
+        background-color: white;
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        min-height: 50%;
     }
     img {
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
+        object-fit: contain;
     }
     @media only screen and (max-width: 600px) {
         .top-half, .bottom-half {
-            height: auto;
+            min-height: auto;
         }
     }
 </style>
